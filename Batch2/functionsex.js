@@ -67,16 +67,33 @@
 
 // implicit returns and explicit returns
 
-function test1(a,b){
+// function test1(a,b){
     
-    return a+b;
-}
-console.log(test1(5,5));
+//     return a+b;
+// }
+// console.log(test1(5,5));
 
-// explicit returns
-let x = (a,b) => {return a*b};
-console.log(x(5,5));
+// // explicit returns
+// let x = (a,b) => {return a*b};
+// console.log(x(5,5));
 
-// implicit returns
-let y = (a,b) => a+b;
-console.log(y(100,200));
+// // implicit returns
+// let y = (a,b) => a+b;
+// console.log(y(100,200));
+
+
+
+// Higher order function & callback function
+
+// function hof(a){ // higher order function
+//     return a();
+// }
+// let x = hof (function(){return "Callback function"});
+// console.log(x);
+
+// let y = function(){return "Callback function"};
+// console.log(y());
+
+// let users = ["Manoj" , "Raj" , "Ravi" , "Rahul"];
+// console.log(users);
+// users.map(function(user){console.log(user)})
