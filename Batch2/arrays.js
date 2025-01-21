@@ -92,31 +92,51 @@ let userDetails =[
     {
       
             name:"X",
-            city:"abc"
+            city:"abc",
         
-    }
+    },
 
     {
         
             name:"y",
-            city:"qwe"
+            city:"qwe",
         
-    }
+    },
 
     {
         
             name:"Z",
-            city:"rty"
+            city:"rty",
         
-    }
+    },
 
 
     {
         
             name:"A",
-            city:"uio"
+            city:"uio",
         
     }
 
 ];
 
+
+
+// JSON
+
+let userData ={
+        name:"x",
+        age:22,
+        city:"hyd",
+
+}
+
+console.log(userData.name , typeof(userData));
+
+
+
+let x = JSON.stringify(userData);
+console.log(x, typeof(x));
+
+let y = JSON.parse(x);
+console.log(y);
