@@ -266,3 +266,9 @@ DOM Methods:-
 - below methods used to select html elements based on "css selectors".
 5.document.querySelector("#id"):- this method is used to select only one element.
 6.document.querySelectorAll(".class"):- this method is used to select multiple elements.
+
+
+
+
+--> Take array of objects where each object contains emp id, emp name, emp company, emp salary, and emp address where emp address futhur contains an object which includes two properties such as emp city, area.
+-Display all these employee datas on the UI through javascript.
