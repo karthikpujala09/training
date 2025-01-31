@@ -21,7 +21,7 @@
     </table>
 
     <script>
-        let employees = [
+        let employes = [
         {
             empId: 1,
             empName: abc,
@@ -31,10 +31,71 @@
                 empCity: "HYD",
                 empArea: "HYD"
             }
-        }
+        },
         {
             empId
         }]
-    </script>
+    </script><!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Sl.no</th>
+                    <th>Name</th>
+                    <th>Company</th>
+                    <th>Salary</th>
+                    <th>City</th>
+                    <th>Area</th>
+                </tr>
+            </thead>
+            <tbody id="store"></tbody>
+        </table>
+    
+        <script>
+            let employees = [
+                {
+                    empId: 1,
+                    empName: "ABC",
+                    empCompany: "ABCD",
+                    empSal: 1234,
+                    empAddress: {
+                        empCity: "HYD",
+                        empArea: "HYD"
+                    }
+                },
+                {
+                    empId: 2,
+                    empName: "DEF",
+                    empCompany: "XYZ",
+                    empSal: 5678,
+                    empAddress: {
+                        empCity: "BLR",
+                        empArea: "KRM"
+                    }
+                }
+            ];
+    
+            let tableBody = document.getElementById("store");
+            employees.forEach(emp => {
+                let row = `<tr>
+                    <td>${emp.empId}</td>
+                    <td>${emp.empName}</td>
+                    <td>${emp.empCompany}</td>
+                    <td>${emp.empSal}</td>
+                    <td>${emp.empAddress.empCity}</td>
+                    <td>${emp.empAddress.empArea}</td>
+                </tr>`;
+                tableBody.innerHTML += row;
+            });
+        </script>
+    </body>
+    </html>
+    
 </body>
 </html>
