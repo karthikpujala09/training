@@ -15,7 +15,8 @@ const obj = {
     name: "sam",
     company: "ExcelR"
 };
+let college = "MRU";
+
 export { x, user, users, obj };
 
-
-export default "This is a default export";
+export default college;
